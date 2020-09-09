@@ -26,15 +26,9 @@ describe('postcss-sparrow-auto-content-visibility', function () {
       })
   })
 
-  afterEach(function () {
-    sinon.restore()
-  })
-
   describe('if wildcard is used', function () {
     describe('if inclusion is set to true', function () {
-      it('all declarations should be selected', async function () {
-        const spy = sinon.spy()
-
+      it('content-visibility: auto; should be added to all declarations', async function () {
         const options = {
           transformations: [
             {
@@ -54,15 +48,15 @@ describe('postcss-sparrow-auto-content-visibility', function () {
             from: undefined
           })
 
-        // const declAmount = R.reduce(
-        //   (acc, value) => R.pipe(
-        //     R.prop('nodes'),
-        //     R.prop('length'),
-        //     R.add(acc)
-        //   )(value)
-        // )(0)(result.root.nodes)
-        //
-        // expect(spy.callCount).to.equal(declAmount)
+        const declAmount = R.reduce(
+          (acc, value) => R.pipe(
+            R.prop('nodes'),
+            R.prop('length'),
+            R.add(acc)
+          )(value)
+        )(0)(result.root.nodes)
+
+        expect(declAmount).to.equal(4)
       })
     })
   })
