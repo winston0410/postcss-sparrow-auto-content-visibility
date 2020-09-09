@@ -1,4 +1,3 @@
-import typescript from '@rollup/plugin-typescript'
 const {
   terser
 } = require('rollup-plugin-terser')
@@ -43,7 +42,6 @@ export default [{
   }
   ],
   plugins: [
-    typescript(),
     nodeResolve({}),
     commonjs({
       include: ['./src/**', 'node_modules/**']
