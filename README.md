@@ -1,5 +1,7 @@
 # PostCSS Sparrow Auto Content Visibility
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/4b9666cac5634673c7ae/maintainability)](https://codeclimate.com/github/winston0410/postcss-sparrow-auto-content-visibility/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4b9666cac5634673c7ae/test_coverage)](https://codeclimate.com/github/winston0410/postcss-sparrow-auto-content-visibility/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/winston0410/postcss-sparrow-auto-content-visibility/badge.svg?targetFile=package.json)](https://snyk.io/test/github/winston0410/postcss-sparrow-auto-content-visibility?targetFile=package.json) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/74dec1f0f830470b832f92564180eb6a)](https://www.codacy.com/manual/winston0410/postcss-sparrow-auto-content-visibility?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=winston0410/postcss-sparrow-auto-content-visibility&amp;utm_campaign=Badge_Grade)
+
 A PostCSS plugin that helps you add the new experimental CSS declaration, `content-visibility: auto` to any selectors with `display: none` for boosting render performance.
 
 For the benefit of `content-visibility: auto`, check out [this post](https://web.dev/content-visibility/).
