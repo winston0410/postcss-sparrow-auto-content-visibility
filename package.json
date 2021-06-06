@@ -34,7 +34,7 @@
     "sanctuary": "^3.1.0"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^40.0.4",
+    "@logux/eslint-config": "45.4.4",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "chai": "^4.2.0",
